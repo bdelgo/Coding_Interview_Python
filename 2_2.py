@@ -11,7 +11,7 @@ class Node(object):
     self.data = data
     self.next = None  
 
-def question5(ll, n):
+def nth_from_end(ll, n):
     """
     Finds the element in a singly linked list(ll) 
     that's n elements from the end
@@ -30,9 +30,9 @@ def question5(ll, n):
     
     return stack.pop(len(stack)-n).data
  
-### Qustoin 5 Test Cases
+### Test Cases
 
-print "---------- Question5 Test Cases: ----------\n"
+print "----------  Test Cases: ----------\n"
 
 d = Node(14)
 c = Node(13)
@@ -43,11 +43,11 @@ a = Node(11)
 a.next = b
 
 print "a(11) --> b(12) --> c(13) --> d(14)"
-print "question5(a, 0) = ", question5(a, 0)
-print "question5(a, 1) = ", question5(a, 1)
-print "question5(a, 2) = ", question5(a, 2)
-print "question5(a, 3) = ", question5(a, 3)
-print "question5(a, 4) = ", question5(a, 4)
-print "question5(a, 5) = ", question5(a, 5)
+print "nth_from_end(a, 0) = ", nth_from_end(a, 0)
+print "nth_from_end(a, 1) = ", nth_from_end(a, 1)
+print "nth_from_end(a, 2) = ", nth_from_end(a, 2)
+print "nth_from_end(a, 3) = ", nth_from_end(a, 3)
+print "nth_from_end(a, 4) = ", nth_from_end(a, 4)
+print "nth_from_end(a, 5) = ", nth_from_end(a, 5)
 
      
